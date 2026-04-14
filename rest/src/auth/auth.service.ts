@@ -93,6 +93,8 @@ export class AuthService {
       throw new UnauthorizedException('Недействительный refresh-токен');
     }
 
+    // Здесь verifyAsync проверяет подпись и срок жизни refresh token
+    // теми же настройками JwtModule, что и JwtStrategy для access token.
     const payload: JwtPayload = await this.jwtService.verifyAsync(refreshToken);
 
     if (payload) {
@@ -136,6 +138,7 @@ export class AuthService {
   private auth(res: Response, id: string) {
     const { accessToken, refreshToken } = this.generateTokens(id);
 
+    // Refresh token храним в httpOnly cookie, чтобы не отдавать его в JS-клиент.
     this.setCookie(
       res,
       refreshToken,
@@ -148,10 +151,12 @@ export class AuthService {
   private generateTokens(id: string) {
     const payload: JwtPayload = { id };
 
+    // Access token потом читает passport-jwt из Authorization: Bearer <token>.
     const accessToken = this.jwtService.sign(payload, {
       expiresIn: this.JWT_ACCESS_TOKEN_TTL,
     });
 
+    // Refresh token живёт дольше и используется только для перевыпуска access token.
     const refreshToken = this.jwtService.sign(payload, {
       expiresIn: this.JWT_REFRESH_TOKEN_TTL,
     });
@@ -168,6 +173,7 @@ export class AuthService {
       domain: this.COOKIE_DOMAIN,
       expires,
       secure: !isDev(this.configService),
+      // В dev нужен none для кросс-доменных cookie, в остальных средах достаточно lax.
       sameSite: isDev(this.configService) ? 'none' : 'lax',
     });
   }

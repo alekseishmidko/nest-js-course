@@ -7,7 +7,6 @@ import {
   Post,
   Req,
   Res,
-  UseGuards,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterRequest } from './dto/register.dto';
@@ -15,6 +14,7 @@ import { LoginRequest } from './dto/login.dto';
 import type { Request, Response } from 'express';
 import {
   ApiBadRequestResponse,
+  ApiBearerAuth,
   ApiConflictResponse,
   ApiNotFoundResponse,
   ApiOkResponse,
@@ -86,11 +86,12 @@ export class AuthController {
   async logout(@Res({ passthrough: true }) res: Response) {
     return await this.authService.logout(res);
   }
-
+  @ApiBearerAuth()
   @Authorization()
   @Get('@me')
   @HttpCode(HttpStatus.OK)
   async me(@Authorized('id') id: string) {
+    // id берётся из request.user, который наполняет JwtStrategy.
     return { id };
   }
 }
