@@ -9,7 +9,10 @@ import { PassportModule } from '@nestjs/passport';
 
 @Module({
   imports: [
+    // PassportModule подключает интеграцию Nest с passport,
+    // чтобы guards могли вызывать зарегистрированные стратегии по имени.
     PassportModule,
+    // JwtModule нужен AuthService для подписи и верификации access/refresh токенов.
     JwtModule.registerAsync({
       imports: [ConfigModule],
       useFactory: getJwtConfig,
@@ -17,6 +20,7 @@ import { PassportModule } from '@nestjs/passport';
     }),
   ],
   controllers: [AuthController],
+  // JwtStrategy регистрирует passport-стратегию с именем "jwt".
   providers: [AuthService, JwtStrategy],
 })
 export class AuthModule {}
