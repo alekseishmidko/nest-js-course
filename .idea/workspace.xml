@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="combine project">
-      <change afterPath="$PROJECT_DIR$/testing/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/prisma.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/prisma/schema.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/src/artist/dto/artist.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/src/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/src/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/test/artist.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="модуль с тестированием">
+      <change beforePath="$PROJECT_DIR$/testing/test/app.e2e-spec.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +88,7 @@
     "npm.start:dev (1).executor": "Run",
     "npm.start:dev.executor": "Run",
     "npm.test.executor": "Run",
+    "npm.test:e2e.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/alexeishmidko/webstorm/nest-js-course/rest/node_modules/prettier",
     "ts.external.directory.path": "/Users/alexeishmidko/webstorm/nest-js-course/rest/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -122,7 +103,7 @@
       <recent name="$PROJECT_DIR$/websocket/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.test:e2e">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -134,16 +115,6 @@
       <command value="run" />
       <scripts>
         <script value="prisma:db:push" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="prisma:generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prisma:generate" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -179,13 +150,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/testing/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:e2e" />
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start:debug" />
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.prisma:db:push" />
-        <item itemvalue="npm.prisma:generate" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +202,7 @@
       <updated>1776275448399</updated>
       <workItem from="1776275449541" duration="5160000" />
       <workItem from="1776358924925" duration="4733000" />
-      <workItem from="1776519733638" duration="1798000" />
+      <workItem from="1776519733638" duration="2826000" />
     </task>
     <task id="LOCAL-00003" summary="refactor , тест">
       <option name="closed" value="true" />
@@ -319,7 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776362248443</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="модуль с тестированием">
+      <option name="closed" value="true" />
+      <created>1776523373523</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1776523373523</updated>
+    </task>
+    <task id="LOCAL-00016" summary="модуль с тестированием">
+      <option name="closed" value="true" />
+      <created>1776523444609</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1776523444609</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +354,8 @@
     <MESSAGE value="websocket" />
     <MESSAGE value="websocket init" />
     <MESSAGE value="combine project" />
-    <option name="LAST_COMMIT_MESSAGE" value="combine project" />
+    <MESSAGE value="модуль с тестированием" />
+    <option name="LAST_COMMIT_MESSAGE" value="модуль с тестированием" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
   <component name="XDebuggerManager">
