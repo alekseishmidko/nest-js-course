@@ -1,5 +1,5 @@
 {
-  "name": "nest-js-course_rest",
+  "name": "nest-js-course_gql",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -25,9 +25,13 @@
     "docker-compose:up": "docker compose -f ./docker-compose.yml up"
   },
   "dependencies": {
+    "@apollo/server": "^5.5.0",
+    "@as-integrations/express5": "^1.1.2",
+    "@nestjs/apollo": "^13.2.5",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^4.0.4",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/graphql": "^13.2.5",
     "@nestjs/jwt": "^11.0.2",
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^10.0.0",

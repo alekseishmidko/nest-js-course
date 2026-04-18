@@ -5,7 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="модуль с тестированием">
-      <change beforePath="$PROJECT_DIR$/testing/test/app.e2e-spec.ts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/nest-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/prisma.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/prisma/schema.prisma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/authorization.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/authorized.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/roles.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/auth.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/login.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/register.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/jwt.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/roles.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/inputs/login.input.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/inputs/register.input.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/interfaces/jwt.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/models/auth.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/auth/strategies/jwt.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/common/interfaces/gql-context.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/common/models/base.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/config/graphql.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/config/jwt.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/config/swagger.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/user/models/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/utils/is-dev.util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/src/utils/swagger.util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/tsconfig.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +59,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="84" />
+    <option name="cachedIndexableFilesCount" value="177" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -64,6 +111,12 @@
     "Docker.rest/docker-compose.yaml.postgres: Compose Deployment.executor": "Run",
     "Docker.rest/docker-compose.yaml: Compose Deployment.executor": "Run",
     "Docker.testing: Compose Deployment.executor": "Run",
+    "HTTP Request.auth | Login.executor": "Run",
+    "HTTP Request.auth | Logout.executor": "Run",
+    "HTTP Request.auth | Refresh.executor": "Run",
+    "HTTP Request.auth | Register.executor": "Run",
+    "HTTP Request.user | getAllUsers.executor": "Run",
+    "HTTP Request.user | getMe.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,7 +126,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "development",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/testing",
+    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/graphql",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -96,6 +149,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/graphql" />
       <recent name="$PROJECT_DIR$/testing" />
       <recent name="$PROJECT_DIR$/websocket" />
     </key>
@@ -103,70 +157,52 @@
       <recent name="$PROJECT_DIR$/websocket/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test:e2e">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="auth | Login" value="STOPPED" />
+              <entry key="auth | Logout" value="STOPPED" />
+              <entry key="auth | Refresh" value="STOPPED" />
+              <entry key="user | getAllUsers" value="STOPPED" />
+              <entry key="user | getMe" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.user | getAllUsers">
+    <configuration name="auth | Login" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Login" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="auth | Logout" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Logout" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="auth | Refresh" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Refresh" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user | getAllUsers" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/user.http" executionIdentifier="getAllUsers" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user | getMe" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/user.http" executionIdentifier="getMe" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="prisma:db:push" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prisma:db:push" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start:debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:debug" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test:e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/testing/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test:e2e" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test:e2e" />
-        <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.start:debug" />
-        <item itemvalue="npm.prisma:db:push" />
+        <item itemvalue="HTTP Request.user | getAllUsers" />
+        <item itemvalue="HTTP Request.user | getMe" />
+        <item itemvalue="HTTP Request.auth | Login" />
+        <item itemvalue="HTTP Request.auth | Logout" />
+        <item itemvalue="HTTP Request.auth | Refresh" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +238,8 @@
       <updated>1776275448399</updated>
       <workItem from="1776275449541" duration="5160000" />
       <workItem from="1776358924925" duration="4733000" />
-      <workItem from="1776519733638" duration="2826000" />
+      <workItem from="1776519733638" duration="4366000" />
+      <workItem from="1776532909790" duration="1512000" />
     </task>
     <task id="LOCAL-00003" summary="refactor , тест">
       <option name="closed" value="true" />
@@ -316,7 +353,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776523444609</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="модуль с тестированием">
+      <option name="closed" value="true" />
+      <created>1776531369469</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1776531369469</updated>
+    </task>
+    <task id="LOCAL-00018" summary="модуль с тестированием">
+      <option name="closed" value="true" />
+      <created>1776531427571</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1776531427571</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,8 +416,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/testing/src/artist/artist.service.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/graphql/src/user/user.service.ts</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
