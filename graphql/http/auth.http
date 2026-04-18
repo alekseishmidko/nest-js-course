@@ -1,0 +1,103 @@
+@baseUrl = http://localhost:4100
+@graphqlUrl = {{baseUrl}}/graphql
+
+# Если register вернёт конфликт, просто поменяй email ниже.
+@userName = Alex
+@userEmail = alex@example.com
+@userPassword = secret123
+
+### Register
+POST {{graphqlUrl}}
+Content-Type: application/json
+
+{
+  "query": "mutation Register($data: RegisterInput!) { register(data: $data) { accessToken } }",
+  "variables": {
+    "data": {
+      "name": "{{userName}}",
+      "email": "{{userEmail}}",
+      "password": "{{userPassword}}"
+    }
+  }
+}
+
+> {%
+  const auth = response.body?.data?.register;
+  if (auth?.accessToken) {
+    client.global.set("access_token", auth.accessToken);
+  }
+
+  const setCookieHeader = response.headers.valueOf("Set-Cookie");
+  const refreshCookie = setCookieHeader?.match(/refreshToken=[^;]+/)?.[0];
+
+  if (refreshCookie) {
+    client.global.set("refresh_cookie", refreshCookie);
+  }
+%}
+
+### Login
+POST {{graphqlUrl}}
+Content-Type: application/json
+
+{
+  "query": "mutation Login($data: LoginInput!) { login(data: $data) { accessToken } }",
+  "variables": {
+    "data": {
+      "email": "{{userEmail}}",
+      "password": "{{userPassword}}"
+    }
+  }
+}
+
+> {%
+  const auth = response.body?.data?.login;
+  if (auth?.accessToken) {
+    client.global.set("access_token", auth.accessToken);
+  }
+
+  const setCookieHeader = response.headers.valueOf("Set-Cookie");
+  const refreshCookie = setCookieHeader?.match(/refreshToken=[^;]+/)?.[0];
+
+  if (refreshCookie) {
+    client.global.set("refresh_cookie", refreshCookie);
+  }
+%}
+
+### Refresh
+POST {{graphqlUrl}}
+Content-Type: application/json
+Cookie: {{refresh_cookie}}
+
+{
+  "query": "mutation Refresh { refresh { accessToken } }"
+}
+
+> {%
+  const auth = response.body?.data?.refresh;
+  if (auth?.accessToken) {
+    client.global.set("access_token", auth.accessToken);
+  }
+
+  const setCookieHeader = response.headers.valueOf("Set-Cookie");
+  const refreshCookie = setCookieHeader?.match(/refreshToken=[^;]+/)?.[0];
+
+  if (refreshCookie) {
+    client.global.set("refresh_cookie", refreshCookie);
+  }
+%}
+
+### Logout
+POST {{graphqlUrl}}
+Content-Type: application/json
+Cookie: {{refresh_cookie}}
+
+{
+  "query": "mutation Logout { logout }"
+}
+
+> {%
+  if (response.body?.data?.logout) {
+    client.global.set("access_token", "");
+    client.global.set("refresh_cookie", "");
+  }
+%}

@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:4100
+@graphqlUrl = {{baseUrl}}/graphql
+
+# Сначала выполни register или login из auth.http, чтобы заполнить {{access_token}}.
+### getMe
+POST {{graphqlUrl}}
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+{
+  "query": "query GetMe { getMe { id name email role createdAt updatedAt } }"
+}
+
+### getAllUsers
+# Требует пользователя с ролью ADMIN.
+POST {{graphqlUrl}}
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+{
+  "query": "query GetAllUsers { getAllUsers { id name email role createdAt updatedAt } }"
+}

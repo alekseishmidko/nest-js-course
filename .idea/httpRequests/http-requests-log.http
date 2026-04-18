@@ -1,0 +1,131 @@
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM5MywiZXhwIjoxNzc2NjEzNTkzfQ.Nd-VKlRulTZMsHS1Bskzmx_NLvU33AS8iJrpjI03aCo
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM5MywiZXhwIjoxNzc3MTM5MTkzfQ.xWYWQmqnB1JbhSQ_8CXk4p0zctpH2G4_nRv30KHmJtQ
+
+{
+  "query": "query GetAllUsers { getAllUsers { id name email role createdAt updatedAt } }"
+}
+
+<> 2026-04-19T004655.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM5MywiZXhwIjoxNzc2NjEzNTkzfQ.Nd-VKlRulTZMsHS1Bskzmx_NLvU33AS8iJrpjI03aCo
+Content-Length: 81
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM5MywiZXhwIjoxNzc3MTM5MTkzfQ.xWYWQmqnB1JbhSQ_8CXk4p0zctpH2G4_nRv30KHmJtQ
+
+{
+  "query": "query GetMe { getMe { id name email role createdAt updatedAt } }"
+}
+
+<> 2026-04-19T004645.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Content-Length: 197
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "query": "mutation Login($data: LoginInput!) { login(data: $data) { accessToken } }",
+  "variables": {
+    "data": {
+      "email": "alex@example.com",
+      "password": "secret123"
+    }
+  }
+}
+
+<> 2026-04-19T004633.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM3NCwiZXhwIjoxNzc3MTM5MTc0fQ.thgVsLXCVMFeZNp5p9hLek-pmWTSehxAHGY_3Ik10ag; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM3NCwiZXhwIjoxNzc3MTM5MTc0fQ.thgVsLXCVMFeZNp5p9hLek-pmWTSehxAHGY_3Ik10ag
+
+{
+  "query": "mutation Logout { logout }"
+}
+
+<> 2026-04-19T004623.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM2MCwiZXhwIjoxNzc3MTM5MTYwfQ.sfyyedbvo-IO3WsZH5FqD4k9g-Z3Mh6AL5HAvuM5nWQ; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM2MCwiZXhwIjoxNzc3MTM5MTYwfQ.sfyyedbvo-IO3WsZH5FqD4k9g-Z3Mh6AL5HAvuM5nWQ
+
+{
+  "query": "mutation Refresh { refresh { accessToken } }"
+}
+
+<> 2026-04-19T004614.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Content-Length: 197
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM0NiwiZXhwIjoxNzc3MTM5MTQ2fQ.o5FQHGO8cHRhB70xfLV4blZ8l0ojuGCN927Vu_Oa-7Q
+
+{
+  "query": "mutation Login($data: LoginInput!) { login(data: $data) { accessToken } }",
+  "variables": {
+    "data": {
+      "email": "alex@example.com",
+      "password": "secret123"
+    }
+  }
+}
+
+<> 2026-04-19T004600.200.json
+
+###
+
+POST http://localhost:4100/graphql
+Content-Type: application/json
+Content-Length: 228
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "query": "mutation Register($data: RegisterInput!) { register(data: $data) { accessToken } }",
+  "variables": {
+    "data": {
+      "name": "Alex",
+      "email": "alex@example.com",
+      "password": "secret123"
+    }
+  }
+}
+
+<> 2026-04-19T004546.200.json
+
+###
+
