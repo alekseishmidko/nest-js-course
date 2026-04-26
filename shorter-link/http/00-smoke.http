@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:4100
+@password = 123456
+@name = Shorter Link Test User
+@originalUrl = https://example.com/articles/how-to-test-short-links
+
+### Register a fresh user
+# Uses a unique email on each run, so the file can be executed repeatedly without manual edits.
+# @name register
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "{{name}}",
+  "email": "shorter-link-{{$uuid}}@example.com",
+  "password": "{{password}}"
+}
+
+### Read current user
+GET {{baseUrl}}/auth/@me
+Authorization: Bearer {{register.response.body.$.accessToken}}
+
+### Refresh access token
+# Cookie is reused automatically by the IDE HTTP client.
+# @name refresh
+POST {{baseUrl}}/auth/refresh
+
+### Create a short link
+# @name createLink
+POST {{baseUrl}}/links
+Authorization: Bearer {{refresh.response.body.$.accessToken}}
+Content-Type: application/json
+
+{
+  "originalUrl": "{{originalUrl}}"
+}
+
+### Follow redirect and create first click
+GET {{createLink.response.body.$.url}}
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+
+### Follow redirect with another browser
+GET {{createLink.response.body.$.url}}
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0
+
+### Check browser statistics
+GET {{baseUrl}}/statistics/{{createLink.response.body.$.id}}/browsers
+Authorization: Bearer {{refresh.response.body.$.accessToken}}
+
+### Check country statistics
+GET {{baseUrl}}/statistics/{{createLink.response.body.$.id}}/countries
+Authorization: Bearer {{refresh.response.body.$.accessToken}}
+
+### Delete created link
+DELETE {{baseUrl}}/links/{{createLink.response.body.$.id}}
+Authorization: Bearer {{refresh.response.body.$.accessToken}}
+
+### Logout
+POST {{baseUrl}}/auth/logout
+
+### Access protected route without token
+GET {{baseUrl}}/auth/@me

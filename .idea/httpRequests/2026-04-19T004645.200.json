@@ -1,0 +1,12 @@
+{
+  "data": {
+    "getMe": {
+      "id": "e3c65a25-eaea-4e9d-8b40-eaec4ac8e7e7",
+      "name": "Alex",
+      "email": "alex@example.com",
+      "role": "USER",
+      "createdAt": "2026-04-18T17:45:46.600Z",
+      "updatedAt": "2026-04-18T17:45:46.600Z"
+    }
+  }
+}

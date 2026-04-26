@@ -1,0 +1,51 @@
+@baseUrl = http://localhost:4100
+@password = 123456
+
+### Register validation error
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "not-an-email",
+  "password": "123"
+}
+
+### Register valid user for authorized negative checks
+# @name register
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Negative Checks User",
+  "email": "shorter-link-errors-{{$uuid}}@example.com",
+  "password": "{{password}}"
+}
+
+### Login unknown user
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "missing-user@example.com",
+  "password": "123456"
+}
+
+### Refresh without cookie
+POST {{baseUrl}}/auth/refresh
+
+### Create link with invalid URL
+POST {{baseUrl}}/links
+Authorization: Bearer {{register.response.body.$.accessToken}}
+Content-Type: application/json
+
+{
+  "originalUrl": "not-a-url"
+}
+
+### Delete unknown link
+DELETE {{baseUrl}}/links/00000000-0000-0000-0000-000000000000
+Authorization: Bearer {{register.response.body.$.accessToken}}
+
+### Redirect by unknown code
+GET {{baseUrl}}/unknown-short-code
