@@ -4,54 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="модуль с тестированием">
-      <change afterPath="$PROJECT_DIR$/graphql/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/prisma.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/prisma/schema.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/authorization.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/authorized.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/decorators/roles.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/auth.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/login.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/dto/register.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/jwt.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/guards/roles.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/inputs/login.input.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/inputs/register.input.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/interfaces/jwt.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/models/auth.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/auth/strategies/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/common/interfaces/gql-context.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/common/models/base.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/config/graphql.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/config/jwt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/config/swagger.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/user/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/user/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/utils/is-dev.util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/src/utils/swagger.util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/tsconfig.json" afterDir="false" />
+    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="модуль с graphql">
+      <change afterPath="$PROJECT_DIR$/shorter-link/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/nest-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/prisma.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/prisma/schema.prisma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/api.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/dto/login.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/dto/register.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/dto/create-link.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/dto/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/authorization.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/authorized.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/http.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/guards/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/interfaces/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/interfaces/jwt.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/strategies/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/strategies/jwt.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/format-name.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/is-dev.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/config/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/config/jwt.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/infra.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/test/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/test/jest-e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/tsconfig.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shorter-link/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="177" />
+    <option name="cachedIndexableFilesCount" value="189" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,6 +99,9 @@
     &quot;accountId&quot;: &quot;cfc2eb5f-a08b-4caf-ab42-70b4ce28309f&quot;
   }
 }</component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -110,7 +119,14 @@
   "keyToString": {
     "Docker.rest/docker-compose.yaml.postgres: Compose Deployment.executor": "Run",
     "Docker.rest/docker-compose.yaml: Compose Deployment.executor": "Run",
+    "Docker.shorter-link: Compose Deployment.executor": "Run",
     "Docker.testing: Compose Deployment.executor": "Run",
+    "HTTP Request.00-smoke | Access protected route without token.executor": "Run",
+    "HTTP Request.00-smoke | Read current user.executor": "Run",
+    "HTTP Request.00-smoke | register.executor": "Run",
+    "HTTP Request.01-auth | Preconditions.executor": "Run",
+    "HTTP Request.01-errors | Register validation error.executor": "Run",
+    "HTTP Request.02-links | Create Link Validation Error.executor": "Run",
     "HTTP Request.auth | Login.executor": "Run",
     "HTTP Request.auth | Logout.executor": "Run",
     "HTTP Request.auth | Refresh.executor": "Run",
@@ -126,7 +142,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "development",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/graphql",
+    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/shorter-link/src/infra/prisma",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -149,9 +165,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shorter-link/src/infra/prisma" />
+      <recent name="$PROJECT_DIR$/shorter-link" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/graphql" />
       <recent name="$PROJECT_DIR$/testing" />
-      <recent name="$PROJECT_DIR$/websocket" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/websocket/src" />
@@ -163,31 +181,31 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="auth | Login" value="STOPPED" />
-              <entry key="auth | Logout" value="STOPPED" />
-              <entry key="auth | Refresh" value="STOPPED" />
-              <entry key="user | getAllUsers" value="STOPPED" />
-              <entry key="user | getMe" value="STOPPED" />
+              <entry key="00-smoke | Access protected route without token" value="STOPPED" />
+              <entry key="00-smoke | Read current user" value="STOPPED" />
+              <entry key="00-smoke | register" value="STOPPED" />
+              <entry key="01-auth | Preconditions" value="STOPPED" />
+              <entry key="01-errors | Register validation error" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.user | getAllUsers">
-    <configuration name="auth | Login" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Login" index="2" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.00-smoke | register">
+    <configuration name="00-smoke | Access protected route without token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="Access protected route without token" index="11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="auth | Logout" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Logout" index="4" runType="Run single request">
+    <configuration name="00-smoke | Read current user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="Read current user" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="auth | Refresh" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/auth.http" executionIdentifier="Refresh" index="3" runType="Run single request">
+    <configuration name="00-smoke | register" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="register" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user | getAllUsers" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/user.http" executionIdentifier="getAllUsers" index="2" runType="Run single request">
+    <configuration name="01-auth | Preconditions" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/01-auth.http" executionIdentifier="Preconditions" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user | getMe" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/graphql/http/user.http" executionIdentifier="getMe" runType="Run single request">
+    <configuration name="01-errors | Register validation error" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/01-errors.http" executionIdentifier="Register validation error" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
@@ -198,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.user | getAllUsers" />
-        <item itemvalue="HTTP Request.user | getMe" />
-        <item itemvalue="HTTP Request.auth | Login" />
-        <item itemvalue="HTTP Request.auth | Logout" />
-        <item itemvalue="HTTP Request.auth | Refresh" />
+        <item itemvalue="HTTP Request.00-smoke | register" />
+        <item itemvalue="HTTP Request.01-errors | Register validation error" />
+        <item itemvalue="HTTP Request.00-smoke | Access protected route without token" />
+        <item itemvalue="HTTP Request.00-smoke | Read current user" />
+        <item itemvalue="HTTP Request.01-auth | Preconditions" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +257,9 @@
       <workItem from="1776275449541" duration="5160000" />
       <workItem from="1776358924925" duration="4733000" />
       <workItem from="1776519733638" duration="4366000" />
-      <workItem from="1776532909790" duration="1512000" />
+      <workItem from="1776532909790" duration="1727000" />
+      <workItem from="1776615647454" duration="37000" />
+      <workItem from="1777103557843" duration="6522000" />
     </task>
     <task id="LOCAL-00003" summary="refactor , тест">
       <option name="closed" value="true" />
@@ -369,7 +389,39 @@
       <option name="project" value="LOCAL" />
       <updated>1776531427571</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="модуль с graphql">
+      <option name="closed" value="true" />
+      <created>1776534445764</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1776534445764</updated>
+    </task>
+    <task id="LOCAL-00020" summary="модуль с graphql">
+      <option name="closed" value="true" />
+      <created>1776534521782</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1776534521782</updated>
+    </task>
+    <task id="LOCAL-00021" summary="модуль с graphql">
+      <option name="closed" value="true" />
+      <created>1776534565161</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1776534565162</updated>
+    </task>
+    <task id="LOCAL-00022" summary="модуль с graphql">
+      <option name="closed" value="true" />
+      <created>1776534594267</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1776534594267</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +460,8 @@
     <MESSAGE value="websocket init" />
     <MESSAGE value="combine project" />
     <MESSAGE value="модуль с тестированием" />
-    <option name="LAST_COMMIT_MESSAGE" value="модуль с тестированием" />
+    <MESSAGE value="модуль с graphql" />
+    <option name="LAST_COMMIT_MESSAGE" value="модуль с graphql" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -421,6 +474,16 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/graphql/src/user/user.service.ts</url>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/shorter-link/src/api/auth/auth.module.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/shorter-link/src/api/auth/auth.controller.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,3 +1,66 @@
+POST http://localhost:4100/auth/register
+Content-Type: application/json
+Content-Length: 138
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIzMjIyLWE3YjYtNGQ2Yi1hNDM0LTQxMDZiNmZjNjE0NSIsImlhdCI6MTc3NzIxOTMzMCwiZXhwIjoxNzc3ODI0MTMwfQ.hQom9i05Eq7s-CJXxRvBtg91s6u6ElC2KTUogUF4wHc
+
+{
+  "name": "Shorter Link Test User",
+  "email": "shorter-link-479b2660-bb37-43a6-81c2-34e48da03dd1@example.com",
+  "password": "123456"
+}
+
+<> 2026-04-26T230335.201.json
+
+###
+
+POST http://localhost:4100/auth/register
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIzMjIyLWE3YjYtNGQ2Yi1hNDM0LTQxMDZiNmZjNjE0NSIsImlhdCI6MTc3NzIxOTMzMCwiZXhwIjoxNzc3ODI0MTMwfQ.hQom9i05Eq7s-CJXxRvBtg91s6u6ElC2KTUogUF4wHc
+
+{
+  "name": "",
+  "email": "not-an-email",
+  "password": "123"
+}
+
+<> 2026-04-26T230321.400.json
+
+###
+
+GET http://localhost:4100/auth/@me
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIzMjIyLWE3YjYtNGQ2Yi1hNDM0LTQxMDZiNmZjNjE0NSIsImlhdCI6MTc3NzIxOTMzMCwiZXhwIjoxNzc3ODI0MTMwfQ.hQom9i05Eq7s-CJXxRvBtg91s6u6ElC2KTUogUF4wHc
+
+<> 2026-04-26T230236.401.json
+
+###
+
+POST http://localhost:4100/auth/register
+Content-Type: application/json
+Content-Length: 138
+User-Agent: IntelliJ HTTP Client/WebStorm 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Shorter Link Test User",
+  "email": "shorter-link-d3eb68c8-2b03-4fcc-b6c9-79e1fb71d371@example.com",
+  "password": "123456"
+}
+
+<> 2026-04-26T230210.201.json
+
+###
+
 POST http://localhost:4100/graphql
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYzY1YTI1LWVhZWEtNGU5ZC04YjQwLWVhZWM0YWM4ZTdlNyIsImlhdCI6MTc3NjUzNDM5MywiZXhwIjoxNzc2NjEzNTkzfQ.Nd-VKlRulTZMsHS1Bskzmx_NLvU33AS8iJrpjI03aCo
