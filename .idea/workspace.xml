@@ -4,59 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="модуль с graphql">
-      <change afterPath="$PROJECT_DIR$/shorter-link/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/prisma.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/prisma/schema.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/api.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/dto/login.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/auth/dto/register.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/dto/create-link.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/dto/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/link/link.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/api/statistics/statistics.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/authorization.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/authorized.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/http.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/decorators/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/guards/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/guards/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/interfaces/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/interfaces/jwt.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/strategies/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/strategies/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/format-name.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/common/utils/is-dev.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/config/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/config/jwt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/infra.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/infra/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shorter-link/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="c75b18db-93c6-4dd8-8113-151d3c60c2ac" name="Changes" comment="shorter">
+      <change afterPath="$PROJECT_DIR$/spotify/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/nest-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/prisma.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/common/logger/logger.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/config/spotify.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/file/file.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/file/file.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/file/file.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/spotify/interfaces/artist.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/spotify/interfaces/auth-response.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/spotify/interfaces/spotify-options.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/spotify/spotify.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/spotify/spotify.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/task/task.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/src/task/task.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/test/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/test/jest-e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/tsconfig.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spotify/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +44,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="189" />
+    <option name="cachedIndexableFilesCount" value="258" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,9 +78,9 @@
     &quot;accountId&quot;: &quot;cfc2eb5f-a08b-4caf-ab42-70b4ce28309f&quot;
   }
 }</component>
-  <component name="HttpClientOnboardingState"><![CDATA[{
-  "isOnboardingCommentShown": true
-}]]></component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -142,7 +121,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "development",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/shorter-link/src/infra/prisma",
+    "last_opened_file_path": "/Users/alexeishmidko/webstorm/nest-js-course/spotify",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -165,11 +144,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spotify" />
       <recent name="$PROJECT_DIR$/shorter-link/src/infra/prisma" />
       <recent name="$PROJECT_DIR$/shorter-link" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/graphql" />
-      <recent name="$PROJECT_DIR$/testing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/websocket/src" />
@@ -182,9 +161,7 @@
           <value>
             <map>
               <entry key="00-smoke | Access protected route without token" value="STOPPED" />
-              <entry key="00-smoke | Read current user" value="STOPPED" />
               <entry key="00-smoke | register" value="STOPPED" />
-              <entry key="01-auth | Preconditions" value="STOPPED" />
               <entry key="01-errors | Register validation error" value="STOPPED" />
             </map>
           </value>
@@ -192,17 +169,11 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.00-smoke | register">
+  <component name="RunManager" selected="npm.prisma:db:push">
     <configuration name="00-smoke | Access protected route without token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="Access protected route without token" index="11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="00-smoke | Read current user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="Read current user" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="00-smoke | register" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/00-smoke.http" executionIdentifier="register" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="01-auth | Preconditions" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/01-auth.http" executionIdentifier="Preconditions" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="01-errors | Register validation error" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/shorter-link/http/01-errors.http" executionIdentifier="Register validation error" runType="Run single request">
@@ -214,13 +185,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="prisma:db:push" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/spotify/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prisma:db:push" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/spotify/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.prisma:db:push" />
         <item itemvalue="HTTP Request.00-smoke | register" />
         <item itemvalue="HTTP Request.01-errors | Register validation error" />
         <item itemvalue="HTTP Request.00-smoke | Access protected route without token" />
-        <item itemvalue="HTTP Request.00-smoke | Read current user" />
-        <item itemvalue="HTTP Request.01-auth | Preconditions" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +250,8 @@
       <workItem from="1776519733638" duration="4366000" />
       <workItem from="1776532909790" duration="1727000" />
       <workItem from="1776615647454" duration="37000" />
-      <workItem from="1777103557843" duration="6522000" />
+      <workItem from="1777103557843" duration="7178000" />
+      <workItem from="1777392512255" duration="1454000" />
     </task>
     <task id="LOCAL-00003" summary="refactor , тест">
       <option name="closed" value="true" />
@@ -421,7 +413,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776534594267</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="shorter">
+      <option name="closed" value="true" />
+      <created>1777219459499</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1777219459499</updated>
+    </task>
+    <task id="LOCAL-00024" summary="shorter">
+      <option name="closed" value="true" />
+      <created>1777219508654</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1777219508655</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +469,8 @@
     <MESSAGE value="combine project" />
     <MESSAGE value="модуль с тестированием" />
     <MESSAGE value="модуль с graphql" />
-    <option name="LAST_COMMIT_MESSAGE" value="модуль с graphql" />
+    <MESSAGE value="shorter" />
+    <option name="LAST_COMMIT_MESSAGE" value="shorter" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -477,13 +486,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/shorter-link/src/api/auth/auth.module.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/shorter-link/src/api/auth/auth.controller.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/spotify/src/app.service.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
